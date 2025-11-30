@@ -13,15 +13,15 @@ interface ResumeData {
 }
 
 export async function generateResume(data: ResumeData): Promise<string> {
-  const apiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY || process.env.GEMINI_API_KEY;
+  // const apiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY || process.env.GEMINI_API_KEY;
   
-  if (!apiKey) {
-    throw new Error('GEMINI_API_KEY or GOOGLE_GENERATIVE_AI_API_KEY must be set in environment variables.');
-  }
+  // if (!apiKey) {
+  //   throw new Error('GEMINI_API_KEY or GOOGLE_GENERATIVE_AI_API_KEY must be set in environment variables.');
+  // }
   
-  if (!process.env.GOOGLE_GENERATIVE_AI_API_KEY && process.env.GEMINI_API_KEY) {
-    process.env.GOOGLE_GENERATIVE_AI_API_KEY = process.env.GEMINI_API_KEY;
-  }
+  // if (!process.env.GOOGLE_GENERATIVE_AI_API_KEY && process.env.GEMINI_API_KEY) {
+  //   process.env.GOOGLE_GENERATIVE_AI_API_KEY = process.env.GEMINI_API_KEY;
+  // }
 
   const prompt = `Create a stunning, modern, professional HTML resume that fits perfectly on a single A4 page (210mm x 297mm) for PDF download.
 
