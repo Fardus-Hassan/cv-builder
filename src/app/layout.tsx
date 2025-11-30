@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI-Powered CV Builder",
+  title: "AI-Powered CV Builder | Fardus Hassan",
   description: "Create your professional resume with AI assistance",
 };
 
